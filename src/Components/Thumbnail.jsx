@@ -1,9 +1,12 @@
 import React from "react";
 
-export default function Thumbnail({ trackList }) {
+export default function Thumbnail({ trackList, isPlaying }) {
   return (
-    <div class="thumbnail-border">
-      <img src={trackList[0].thumb} class="song-thumbnail" />
+    <div className="thumbnail-border">
+      <img
+        src={trackList.thumb}
+        className={isPlaying ? "song-thumbnail rotate" : "song-thumbnail"}
+      />
     </div>
   );
 }

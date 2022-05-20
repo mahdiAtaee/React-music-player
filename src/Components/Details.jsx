@@ -3,17 +3,12 @@ import NowPlaying from "./NowPlaying";
 import SongInfo from "./SongInfo";
 import Thumbnail from "./Thumbnail";
 
-export default function Details({trackList}) {
-  const [header, setHeader] = useState({
-    current: 0,
-    total: trackList.length,
-  });
-
+export default function Details({ trackList, len, cursor, isPlaying }) {
   return (
-    <div class="details">
-      <NowPlaying header={header}/>
-      <Thumbnail trackList={trackList}/>
-      <SongInfo />
+    <div className="details">
+      <NowPlaying cursor={cursor} len={len} />
+      <Thumbnail trackList={trackList} isPlaying={isPlaying}/>
+      <SongInfo trackList={trackList} />
     </div>
   );
 }

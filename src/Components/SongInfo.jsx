@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function SongInfo() {
+export default function SongInfo({ trackList }) {
   return (
-    <div class="song-details">
-      <div class="song-title">Aritst name</div>
-      <div class="artist">Music Name</div>
+    <div className="song-details">
+      <div className="song-title">{trackList.name}</div>
+      <div className="artist">{trackList.artist}</div>
     </div>
   );
 }

@@ -1,22 +1,44 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBackward,
+  faForward,
+  faPause,
+  faPlay,
+  faRandom,
+  faRepeat,
+} from "@fortawesome/free-solid-svg-icons";
 
-export default function ControllButton() {
+export default function ControllButton({
+  handleprev,
+  handleNext,
+  handleRepeat,
+  handlePausePlay,
+  isPlaying,
+  random_track,
+  isRandom,
+}) {
   return (
     <div id="song-controls">
-      <div class="button repeat-track" onclick="repeat_track()">
-        <i class="fas fa-repeat"></i>
+      <div className="button repeat-track" onClick={handleRepeat}>
+        <FontAwesomeIcon icon={faRepeat}></FontAwesomeIcon>
       </div>
-      <div class="button prev-btn" onclick="prev_track()">
-        <i class="fas fa-backward"></i>
+      <div className="button prev-btn" onClick={handleprev}>
+        <FontAwesomeIcon icon={faBackward}></FontAwesomeIcon>
       </div>
-      <div class="button pause-btn" onclick="playPauseTrack()">
-        <i class="fas fa-play" id="play_pause"></i>
+      <div className="button pause-btn" onClick={handlePausePlay}>
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay}></FontAwesomeIcon>
       </div>
-      <div class="button next-btn" onclick="next_track()">
-        <i class="fas fa-forward"></i>
+      <div className="button next-btn" onClick={handleNext}>
+        <FontAwesomeIcon icon={faForward}></FontAwesomeIcon>
       </div>
-      <div class="button random-track" onclick="random_track()">
-        <i class="fas fa-random" title="random"></i>
+      <div
+        className={
+          isRandom ? "button random-track active" : "button random-track"
+        }
+        onClick={random_track}
+      >
+        <FontAwesomeIcon icon={faRandom}></FontAwesomeIcon>
       </div>
     </div>
   );

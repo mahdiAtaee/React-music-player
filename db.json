@@ -1,0 +1,40 @@
+{
+  "trackList": [
+    {
+      "thumb": "../media/nasa.jpg",
+      "name": "Nasa",
+      "artist": "putak-leito-Tik Taak sr",
+      "music": "../media/NASA.mp3"
+    },
+    {
+      "thumb": "../media/maroochia.jpg",
+      "name": "Maroochia",
+      "artist": "Koroush",
+      "music": "../media/07_Maroochia_Ft_Sepehr_Khalse_&.mp3"
+    },
+    {
+      "thumb": "../media/sholTekon.jpg",
+      "name": "Shol Tekon",
+      "artist": "Sepehr Khalse Ft Tik Taak",
+      "music": "../media/Sepehr Khalse Ft Tik Taak - Shol Tekoon.mp3"
+    },
+    {
+      "thumb": "../media/12-Saal-Pish.jpg",
+      "name": "12 Saal Pish",
+      "artist": "Behzad Leito Ft Hiphopologist",
+      "music": "../media/Behzad Leito - 12 Saal Pish (Ft Hiphopologist).mp3"
+    },
+    {
+      "thumb": "../media/Business.jpg",
+      "name": "Business",
+      "artist": "Behzad Leito Ft Sijal & Sepehr Khalse & Saman Wilson & Sohrab MJ & Alireza JJ",
+      "music": "../media/Behzad Leito - Business (Ft Sijal & Sepehr Khalse & Saman Wilson & Sohrab MJ & Alireza JJ) [320].mp3"
+    },
+    {
+      "thumb": "../media/Shayea-Deli.jpg",
+      "name": "Deli",
+      "artist": "Shayea Ft sadegh",
+      "music": "../media/Shayea - Deli"
+    }
+  ]
+}

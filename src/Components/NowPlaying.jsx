@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function NowPlaying({ header }) {
+export default function NowPlaying({ cursor, len }) {
   return (
-    <div class="play-of">
-      Now Play {header.current} Of {header.total}
+    <div className="play-of">
+      Now Play {cursor + 1} Of {len}
     </div>
   );
 }
